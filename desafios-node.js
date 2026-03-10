@@ -26,50 +26,53 @@
 
 let readline = require('readline-sync');
 
-let usuario = {
-    nome: readline.question("Nome do usuario: "),
-    idade: readline.questionInt("Idade do usuario: "),
-    profissao: readline.question("Profissao do usuario: "),
-    cidade: readline.question("Cidade do usuario: "),
-    GostaDeJavaScript: readline.keyInYN("Gosta de javaScript?: "),
-    };
 
-const pessoa1 = {
-    nome: readline.question("Nome da primeira pessoa que você mora: "),
-    idade: readline.questionInt("Idade da primeira pessoa: ")
-};
 
-const pessoa2 = {
-    nome: readline.question("Nome da segunda pessoa que você mora: "),
-    idade: readline.questionInt("Idade da segunda pessoa: ")
-};
 
-const pessoasQueMora = [pessoa1, pessoa2];
+// let usuario = {
+//     nome: readline.question("Nome do usuario: "),
+//     idade: readline.questionInt("Idade do usuario: "),
+//     profissao: readline.question("Profissao do usuario: "),
+//     cidade: readline.question("Cidade do usuario: "),
+//     GostaDeJavaScript: readline.keyInYN("Gosta de javaScript?: "),
+//     };
 
-let comida1 = readline.question("Qual a primeira comida favorita?: ");
-let comida2 = readline.question("Qual a segunda comida favorita?: ");
-let comida3 = readline.question("Qual a terceira comida favorita?: ");
-const comidasFavoritas1 = [comida1, comida2, comida3];
+// const pessoa1 = {
+//     nome: readline.question("Nome da primeira pessoa que você mora: "),
+//     idade: readline.questionInt("Idade da primeira pessoa: ")
+// };
 
-const cadastro = {
-    nome: usuario.nome,
-    idade: usuario.idade,
-    profissao: usuario.profissao,
-    cidade: usuario.cidade,
-    gostaJS: usuario.GostaDeJavaScript,
-    comidasFavoritas: comidasFavoritas1,
-    pessoasQueMora: pessoasQueMora
-};
-console.table(cadastro);
+// const pessoa2 = {
+//     nome: readline.question("Nome da segunda pessoa que você mora: "),
+//     idade: readline.questionInt("Idade da segunda pessoa: ")
+// };
 
-console.log(`
-Nome: ${cadastro.nome}.
-Idade: ${cadastro.idade} anos.
-Profissão: ${cadastro.profissao} em ${cadastro.cidade}.
-Gosta de JavaScript: ${cadastro.gostaJS ? "Sim" : "Não"}.
-Comidas favoritas: ${cadastro.comidasFavoritas.join(", ")}.
-Pessoas com quem mora: ${cadastro.pessoasQueMora[0].nome} (${cadastro.pessoasQueMora[0].idade} anos), ${cadastro.pessoasQueMora[1].nome} (${cadastro.pessoasQueMora[1].idade} anos).
-`);
+// const pessoasQueMora = [pessoa1, pessoa2];
+
+// let comida1 = readline.question("Qual a primeira comida favorita?: ");
+// let comida2 = readline.question("Qual a segunda comida favorita?: ");
+// let comida3 = readline.question("Qual a terceira comida favorita?: ");
+// const comidasFavoritas1 = [comida1, comida2, comida3];
+
+// const cadastro = {
+//     nome: usuario.nome,
+//     idade: usuario.idade,
+//     profissao: usuario.profissao,
+//     cidade: usuario.cidade,
+//     gostaJS: usuario.GostaDeJavaScript,
+//     comidasFavoritas: comidasFavoritas1,
+//     pessoasQueMora: pessoasQueMora
+// };
+// console.table(cadastro);
+
+// console.log(`
+// Nome: ${cadastro.nome}.
+// Idade: ${cadastro.idade} anos.
+// Profissão: ${cadastro.profissao} em ${cadastro.cidade}.
+// Gosta de JavaScript: ${cadastro.gostaJS ? "Sim" : "Não"}.
+// Comidas favoritas: ${cadastro.comidasFavoritas.join(", ")}.
+// Pessoas com quem mora: ${cadastro.pessoasQueMora[0].nome} (${cadastro.pessoasQueMora[0].idade} anos), ${cadastro.pessoasQueMora[1].nome} (${cadastro.pessoasQueMora[1].idade} anos).
+// `);
 
 
 
@@ -86,20 +89,20 @@ Pessoas com quem mora: ${cadastro.pessoasQueMora[0].nome} (${cadastro.pessoasQue
 
 // → Seu código aqui:
 
-const amigo1 = {
-    nome: readline.question("Nome do 1º amigo: "),
-    idade: readline.questionInt("Idade do 1º amigo: "),
-    cidade: readline.question("Cidade do 1º amigo: ")
-};
-const amigo2 = {
-    nome: readline.question("Nome do 2º amigo: "),
-    idade: readline.questionInt("Idade do 2º amigo: "),
-    cidade: readline.question("Cidade do 2º amigo: ")
-};   
-const amigos = [amigo1, amigo2];
-console.table(amigos);
-console.log(`Nome: ${amigos[1].nome}, Idade: ${amigos[1].idade}`);
-console.log(`Nome: ${amigos[0].nome}, Cidade: ${amigos[0].cidade}`);
+// const amigo1 = {
+//     nome: readline.question("Nome do 1º amigo: "),
+//     idade: readline.questionInt("Idade do 1º amigo: "),
+//     cidade: readline.question("Cidade do 1º amigo: ")
+// };
+// const amigo2 = {
+//     nome: readline.question("Nome do 2º amigo: "),
+//     idade: readline.questionInt("Idade do 2º amigo: "),
+//     cidade: readline.question("Cidade do 2º amigo: ")
+// };   
+// const amigos = [amigo1, amigo2];
+// console.table(amigos);
+// console.log(`Nome: ${amigos[1].nome}, Idade: ${amigos[1].idade}`);
+// console.log(`Nome: ${amigos[0].nome}, Cidade: ${amigos[0].cidade}`);
 
 
 
@@ -122,7 +125,16 @@ console.log(`Nome: ${amigos[0].nome}, Cidade: ${amigos[0].cidade}`);
 // → Seu código aqui:
 
 
-console.log("_______________________________");
+// console.info("Faça seu pedido: ")
+// let pedido = {
+//     entrada: readline.question("Digite seu prato de entrada: "), 
+//     pratoPrincipal: readline.question("Digite seu prato principal: "),
+//     sobremesa: readline.question("Digite sua sobremesa: "),
+//     bebida1: readline.question("Digite sua primeira bebida: "),
+//     bebida2: readline.question("Digite sua segunda bebida: ")
+// }
+// console.table(pedido);
+// console.log(`Seu pedido: ${pedido.entrada}, Prato Principal: ${pedido.pratoPrincipal}, Sobremesa: ${pedido.sobremesa}, Bebida 1: ${pedido.bebida1}, Bebida 2: ${pedido.bebida2}. Bom apetite!`);
 
 
 // ------------------------------------------------------------
@@ -137,8 +149,14 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-
-console.log("_______________________________");
+// let perfil = {
+//     apelido: readline.question("Digite seu apelido: "),
+//     jogoFavorito: readline.question("Digite seu jogo favorito: "),
+//     horasTotaisJogadas: readline.questionInt("Digite o tempo de jogo: "),
+//     jogaEmTime: readline.keyInYN("Joga em algum time? ")
+// };
+// console.table(perfil);
+// console.warn("Lembre-se que jogar não é problema, o problema é colocar o jogo como prioridade.");
 
 
 // ------------------------------------------------------------
@@ -156,4 +174,21 @@ console.log("_______________________________");
 // → Seu código aqui:
 
 
-console.log("_______________________________");
+let pessoa1 = {
+    nome: readline.question("Digite o nome do primeiro viajante:  "),
+    cidadeFavorita: readline.question("Digite a cidade favorita do primeiro viajante: ")
+};
+let pessoa2 = {
+    nome: readline.question("Digite o nome do segundo viajante: "),
+    cidadeFavorita: readline.question("Digite a cidade favorita do segundo viajante: ")
+};
+let pessoa3 = {
+    nome: readline.question("Digite o nome do terceiro viajante: "),
+    cidadeFavorita: readline.question("Digite a cidade favorita do terceiro viajante: ")
+};
+console.table(pessoa1);
+let viajantes = [pessoa1, pessoa2, pessoa3];
+console.table(viajantes);
+console.info(`Um total de ${viajantes.length} estao na viagem`)
+console.log(`A cidade favotira do viajante 2 é: ${viajantes[1].cidadeFavorita}.`);
+console.log(`O nome do primeiro viajante é: ${viajantes[0].nome}.`);
