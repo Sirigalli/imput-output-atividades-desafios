@@ -27,8 +27,6 @@
 let readline = require('readline-sync');
 
 
-
-
 // let usuario = {
 //     nome: readline.question("Nome do usuario: "),
 //     idade: readline.questionInt("Idade do usuario: "),
@@ -79,30 +77,42 @@ let readline = require('readline-sync');
 // ------------------------------------------------------------
 // DESAFIO 2 – Dois amigos
 // ------------------------------------------------------------
-// a) Peça os dados de 2 pessoas diferentes (nome, idade e cidade de cada uma).
+// a) Peça os dados de 2 pessoas diferentes (nome, idade e enderecoCompleto de cada uma).
+//    enderecoCompleto deve ser um objeto contendo rua, cidade e estado
 // b) Crie um objeto para cada pessoa com essas propriedades.
 // c) Crie uma array chamada "amigos" contendo os dois objetos.
 // d) Exiba a array com console.table().
 // e) Exiba somente o nome e a idade do 2º usuário.
-// f) Exiba somente o endereço completo do 3º usuário.
+// f) Exiba somente o endereço completo do 2º usuário.
 // g) Exiba somente o nome e a rua do 1º usuário.
 
 // → Seu código aqui:
 
-// const amigo1 = {
-//     nome: readline.question("Nome do 1º amigo: "),
-//     idade: readline.questionInt("Idade do 1º amigo: "),
-//     cidade: readline.question("Cidade do 1º amigo: ")
-// };
-// const amigo2 = {
-//     nome: readline.question("Nome do 2º amigo: "),
-//     idade: readline.questionInt("Idade do 2º amigo: "),
-//     cidade: readline.question("Cidade do 2º amigo: ")
-// };   
-// const amigos = [amigo1, amigo2];
-// console.table(amigos);
-// console.log(`Nome: ${amigos[1].nome}, Idade: ${amigos[1].idade}`);
-// console.log(`Nome: ${amigos[0].nome}, Cidade: ${amigos[0].cidade}`);
+const amigo1 = {
+    nome: readline.question("Nome do primeiro amigo: "),
+    idade: readline.questionInt("Idade do primeiro amigo: "),
+    enderecoCompleto: {
+        cidade: readline.question("Digite a cidade do primeiro amigo: "),
+        bairro: readline.question("Digite o bairro do primeiro amigo: "),
+        rua: readline.question("Digite a rua do primeiro amigo: "),
+        numero: readline.questionInt("Digite o numero da casa do primeiro amigo: ")
+    }
+};
+const amigo2 = {
+    nome: readline.question("Nome do segundo amigo: "),
+    idade: readline.questionInt("Idade do segundo amigo: "),
+    enderecoCompleto: {
+        cidade: readline.question("Digite a cidade do segundo amigo: "),
+        bairro: readline.question("Digite o bairro do segundo amigo: "),
+        rua: readline.question("Digite a rua do segundo amigo: "),
+        numero: readline.questionInt("Digite o numero da casa do segundo amigo: ")
+    }
+};   
+const amigos = [amigo1, amigo2];
+console.table(amigos);
+console.log(`Nome: ${amigos[1].nome}, Idade: ${amigos[1].idade}`);
+console.log(`Endereco do segundo usuario: ${amigos[1].enderecoCompleto}.`);
+console.log(`${amigos[0].nome}, ${amigos[0].enderecoCompleto.rua}`)
 
 
 
@@ -174,21 +184,21 @@ let readline = require('readline-sync');
 // → Seu código aqui:
 
 
-let pessoa1 = {
-    nome: readline.question("Digite o nome do primeiro viajante:  "),
-    cidadeFavorita: readline.question("Digite a cidade favorita do primeiro viajante: ")
-};
-let pessoa2 = {
-    nome: readline.question("Digite o nome do segundo viajante: "),
-    cidadeFavorita: readline.question("Digite a cidade favorita do segundo viajante: ")
-};
-let pessoa3 = {
-    nome: readline.question("Digite o nome do terceiro viajante: "),
-    cidadeFavorita: readline.question("Digite a cidade favorita do terceiro viajante: ")
-};
-console.table(pessoa1);
-let viajantes = [pessoa1, pessoa2, pessoa3];
-console.table(viajantes);
-console.info(`Um total de ${viajantes.length} estao na viagem`)
-console.log(`A cidade favotira do viajante 2 é: ${viajantes[1].cidadeFavorita}.`);
-console.log(`O nome do primeiro viajante é: ${viajantes[0].nome}.`);
+// let pessoa1 = {
+//     nome: readline.question("Digite o nome do primeiro viajante:  "),
+//     cidadeFavorita: readline.question("Digite a cidade favorita do primeiro viajante: ")
+// };
+// let pessoa2 = {
+//     nome: readline.question("Digite o nome do segundo viajante: "),
+//     cidadeFavorita: readline.question("Digite a cidade favorita do segundo viajante: ")
+// };
+// let pessoa3 = {
+//     nome: readline.question("Digite o nome do terceiro viajante: "),
+//     cidadeFavorita: readline.question("Digite a cidade favorita do terceiro viajante: ")
+// };
+// console.table(pessoa1);
+// let viajantes = [pessoa1, pessoa2, pessoa3];
+// console.table(viajantes);
+// console.info(`Um total de ${viajantes.length} estao na viagem`)
+// console.log(`A cidade favotira do viajante 2 é: ${viajantes[1].cidadeFavorita}.`);
+// console.log(`O nome do primeiro viajante é: ${viajantes[0].nome}.`);
