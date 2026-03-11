@@ -88,31 +88,31 @@ let readline = require('readline-sync');
 
 // → Seu código aqui:
 
-const amigo1 = {
-    nome: readline.question("Nome do primeiro amigo: "),
-    idade: readline.questionInt("Idade do primeiro amigo: "),
-    enderecoCompleto: {
-        cidade: readline.question("Digite a cidade do primeiro amigo: "),
-        bairro: readline.question("Digite o bairro do primeiro amigo: "),
-        rua: readline.question("Digite a rua do primeiro amigo: "),
-        numero: readline.questionInt("Digite o numero da casa do primeiro amigo: ")
-    }
-};
-const amigo2 = {
-    nome: readline.question("Nome do segundo amigo: "),
-    idade: readline.questionInt("Idade do segundo amigo: "),
-    enderecoCompleto: {
-        cidade: readline.question("Digite a cidade do segundo amigo: "),
-        bairro: readline.question("Digite o bairro do segundo amigo: "),
-        rua: readline.question("Digite a rua do segundo amigo: "),
-        numero: readline.questionInt("Digite o numero da casa do segundo amigo: ")
-    }
-};   
-const amigos = [amigo1, amigo2];
-console.table(amigos);
-console.log(`Nome: ${amigos[1].nome}, Idade: ${amigos[1].idade}`);
-console.log(`Endereco do segundo usuario: ${amigos[1].enderecoCompleto}.`);
-console.log(`${amigos[0].nome}, ${amigos[0].enderecoCompleto.rua}`)
+// const amigo1 = {
+//     nome: readline.question("Nome do primeiro amigo: "),
+//     idade: readline.questionInt("Idade do primeiro amigo: "),
+//     enderecoCompleto: {
+//         cidade: readline.question("Digite a cidade do primeiro amigo: "),
+//         bairro: readline.question("Digite o bairro do primeiro amigo: "),
+//         rua: readline.question("Digite a rua do primeiro amigo: "),
+//         numero: readline.questionInt("Digite o numero da casa do primeiro amigo: ")
+//     }
+// };
+// const amigo2 = {
+//     nome: readline.question("Nome do segundo amigo: "),
+//     idade: readline.questionInt("Idade do segundo amigo: "),
+//     enderecoCompleto: {
+//         cidade: readline.question("Digite a cidade do segundo amigo: "),
+//         bairro: readline.question("Digite o bairro do segundo amigo: "),
+//         rua: readline.question("Digite a rua do segundo amigo: "),
+//         numero: readline.questionInt("Digite o numero da casa do segundo amigo: ")
+//     }
+// };   
+// const amigos = [amigo1, amigo2];
+// console.table(amigos);
+// console.log(`Nome: ${amigos[1].nome}, Idade: ${amigos[1].idade}`);
+// console.log(`Endereco do segundo usuario: ${amigos[1].enderecoCompleto}.`);
+// console.log(`${amigos[0].nome}, ${amigos[0].enderecoCompleto.rua}`)
 
 
 
@@ -135,16 +135,43 @@ console.log(`${amigos[0].nome}, ${amigos[0].enderecoCompleto.rua}`)
 // → Seu código aqui:
 
 
-// console.info("Faça seu pedido: ")
-// let pedido = {
-//     entrada: readline.question("Digite seu prato de entrada: "), 
-//     pratoPrincipal: readline.question("Digite seu prato principal: "),
-//     sobremesa: readline.question("Digite sua sobremesa: "),
-//     bebida1: readline.question("Digite sua primeira bebida: "),
-//     bebida2: readline.question("Digite sua segunda bebida: ")
-// }
-// console.table(pedido);
-// console.log(`Seu pedido: ${pedido.entrada}, Prato Principal: ${pedido.pratoPrincipal}, Sobremesa: ${pedido.sobremesa}, Bebida 1: ${pedido.bebida1}, Bebida 2: ${pedido.bebida2}. Bom apetite!`);
+console.info("========= FAÇA SEU PEDIDO =========")
+console.log(`
+OPCOES DE ENTRADA:
+
+001 - MIX DE SALADAS
+002 - ESPETINHO DE CAMARAO
+003 - MINI PASTEL DE ATUM
+
+OPCOES DE PRATO PRINCIPAL:
+ 
+001 - MACARRAO A BOLONHESA
+002 - CAMARAO NA MORANGA
+003 - LASANHA DE CARNE
+
+OPCOES DE SOBREMESA:
+
+001 - PETIT GATEAU
+002 - MUSSE DE MARACUJA
+003 - PUDIM
+
+OPCOES DE BEBIDAS:
+
+001 - REFRIGERANTES (COCA, GUARANA, SPRITE)
+001 - AGUA (COM GAS E SEM GAS)
+003 - AGUA TONICA`)
+
+
+
+let pedido = {
+    entrada: readline.question("Digite seu prato de entrada: "), 
+    pratoPrincipal: readline.question("Digite seu prato principal: "),
+    sobremesa: readline.question("Digite sua sobremesa: "),
+    bebida1: readline.question("Digite sua primeira bebida: "),
+    bebida2: readline.question("Digite sua segunda bebida: ")
+}
+console.table(pedido);
+console.log(`Seu pedido: ${pedido.entrada}, Prato Principal: ${pedido.pratoPrincipal}, Sobremesa: ${pedido.sobremesa}, Bebida 1: ${pedido.bebida1}, Bebida 2: ${pedido.bebida2}. Bom apetite!`);
 
 
 // ------------------------------------------------------------
